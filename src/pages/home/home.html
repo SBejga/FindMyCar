@@ -1,0 +1,22 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title>Home</ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding>
+    <div>
+      <form (ngSubmit)="test()">
+      <ion-item>
+        <ion-label>Username</ion-label>
+        <ion-input placeholder="Username" name="username" [(ngModel)]="user.username"></ion-input>
+      </ion-item>
+      <ion-item>
+        <ion-label>Password</ion-label>
+        <ion-input placeholder="Password" name="password" [(ngModel)]="user.password"></ion-input>
+      </ion-item>
+      <button ion-button type="submit">Login</button>
+    
+      </form>
+    </div>
+</ion-content>
